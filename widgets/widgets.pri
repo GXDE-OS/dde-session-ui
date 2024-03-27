@@ -11,6 +11,9 @@ include(../session-widgets/session-widgets.pri)
 PKGCONFIG   += liblightdm-qt5-3 dtkwidget x11 xi xtst dframeworkdbus
 
 HEADERS += \
+    $$PWD/dkeyboardmonitor.h \
+    $$PWD/dpasswdeditanimated.h \
+    $$PWD/dpasswdeditanimated_p.h \
     $$PWD/useravatar.h \
     $$PWD/userbutton.h \
     $$PWD/sessionwidget.h \
@@ -32,6 +35,8 @@ HEADERS += \
 
 
 SOURCES += \
+    $$PWD/dkeyboardmonitor.cpp \
+    $$PWD/dpasswdeditanimated.cpp \
     $$PWD/useravatar.cpp \
     $$PWD/userbutton.cpp \
     $$PWD/sessionwidget.cpp \

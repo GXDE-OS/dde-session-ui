@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include <QLabel>
-#include <DPasswdEditAnimated>
+#include "dpasswdeditanimated.h"
 #include <QPushButton>
 #include <functional>
 #include <darrowrectangle.h>

@@ -23,40 +23,39 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef CONTAINER_H
-#define CONTAINER_H
+#ifndef KEYBOARDMONITOR_H
+#define KEYBOARDMONITOR_H
 
-#include <DBlurEffectWidget>
-#include <DWindowManagerHelper>
+#include <QThread>
+#include <QX11Info>
+#include <dtkwidget_global.h>
 
-DGUI_USE_NAMESPACE
-DWIDGET_USE_NAMESPACE
+DWIDGET_BEGIN_NAMESPACE
 
-class QHBoxLayout;
-class Container : public DBlurEffectWidget
+class DKeyboardMonitor : public QThread
 {
     Q_OBJECT
-public:
-    explicit Container(QWidget *parent = 0);
 
-    void setContent(QWidget *content);
-    void moveToCenter();
+public:
+    static DKeyboardMonitor *instance();
+
+    bool isCapslockOn();
+    bool isNumlockOn();
+    bool setNumlockStatus(const bool &on);
+
+Q_SIGNALS:
+    void capslockStatusChanged(bool on);
+    void numlockStatusChanged(bool on);
 
 protected:
-    void showEvent(QShowEvent *event) Q_DECL_OVERRIDE;
-    void hideEvent(QHideEvent *event) Q_DECL_OVERRIDE;
-
-private slots:
-    void windowManagerChanged();
-    void updateWindowRadius();
-    int getWindowRadius();
-    void onDelayQuit();
+    void run() Q_DECL_OVERRIDE;
 
 private:
-    QHBoxLayout *m_layout;
-    DWindowManagerHelper *m_wmHelper;
-    QTimer *m_quitTimer;
-    bool m_supportComposite;
+    DKeyboardMonitor();
+
+    int listen(Display *display);
 };
 
-#endif // CONTAINER_H
+DWIDGET_END_NAMESPACE
+
+#endif // KEYBOARDMONITOR_H

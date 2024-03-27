@@ -11,7 +11,7 @@ HEADERS += \
     $$PWD/userframe.h \
     $$PWD/lockcontent.h \
     $$PWD/framedatabind.h \
-    $$PWD/lockpasswordwidget.h
+    $$PWD/lockpasswordwidget.h 
 
 SOURCES += \
     $$PWD/authinterface.cpp \
@@ -22,4 +22,4 @@ SOURCES += \
     $$PWD/userframe.cpp \
     $$PWD/lockcontent.cpp \
     $$PWD/framedatabind.cpp \
-    $$PWD/lockpasswordwidget.cpp
+    $$PWD/lockpasswordwidget.cpp 
