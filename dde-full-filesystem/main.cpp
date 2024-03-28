@@ -22,6 +22,8 @@
 #include "fullfilesystemframe.h"
 #include <QApplication>
 
+#include <QTranslator>
+
 #include <DLog>
 #include <DApplication>
 
