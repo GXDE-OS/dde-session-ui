@@ -26,6 +26,8 @@
 #include "common.h"
 #include <QSvgRenderer>
 
+#include <QPainterPath>
+
 void DrawHelper::DrawImage(QPainter *painter, const QStyleOptionViewItem &option, const QString &pix, bool withText, bool withProgress)
 {
     const QRect rect(option.rect);

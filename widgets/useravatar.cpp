@@ -28,6 +28,8 @@
 #include <QUrl>
 #include <QFile>
 
+#include <QPainterPath>
+
 UserAvatar::UserAvatar(QWidget *parent, bool deleteable) :
     QPushButton(parent), m_deleteable(deleteable)
 {
