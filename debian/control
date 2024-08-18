@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 8.0.0), pkg-config,
  libgsettings-qt-dev,
  libqt5svg5-dev,
  libglib2.0-dev,
- libdtkwidget-dev,
+ libdtkwidget2-dev,
  qtdeclarative5-dev,
  qttools5-dev-tools,
  libpam0g-dev,libsystemd-dev,
@@ -21,7 +21,7 @@ Build-Depends: debhelper (>= 8.0.0), pkg-config,
  libxtst-dev,
  libxcursor-dev,
  libxrandr-dev,
- libdtkcore5-bin
+ libdtkcore-bin
 Standards-Version: 3.9.4
 Homepage: http://www.deepin.org/
 
