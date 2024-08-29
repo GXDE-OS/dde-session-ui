@@ -33,6 +33,7 @@
 #include <QPropertyAnimation>
 #include <QGraphicsOpacityEffect>
 #include <QObject>
+#include <QPainterPath>
 
 class UserBreathingLabel:public QLabel
 {

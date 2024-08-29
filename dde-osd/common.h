@@ -27,6 +27,7 @@
 #define COMMON_H
 
 #include <QPainter>
+#include <QPainterPath>
 #include <QStyleOptionViewItem>
 #include <QDebug>
 
