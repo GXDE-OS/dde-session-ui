@@ -1,7 +1,7 @@
 Source: dde-session-ui
 Section: devel
 Priority: optional
-Maintainer: Deepin Sysdev <sysdev@deepin.com>
+Maintainer: gfdgd xi <3025613752@qq.com>
 Build-Depends: debhelper (>= 8.0.0), pkg-config,
  libx11-xcb-dev,
  qt5-qmake,
