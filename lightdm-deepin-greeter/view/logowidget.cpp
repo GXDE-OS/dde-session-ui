@@ -41,7 +41,7 @@ const QPixmap systemLogo()
     const QPixmap oem_logo(loadPixmap(logo_path));
 
     if (oem_logo.isNull())
-        return loadPixmap(":img/logo.svg");
+        return loadPixmap(":img/logo.png");
     else
         return oem_logo;
 }
