@@ -1,8 +1,8 @@
-dde-session-ui (4.9.16) UNRELEASED; urgency=medium
+dde-session-ui (4.9.17) UNRELEASED; urgency=medium
 
   * Use dtk2
 
- -- gfdgd_xi <3025613752@qq.com>  Thu, 29 Aug 2024 11:09:54 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Sat, 21 Sep 2024 19:46:32 +0800
 
 dde-session-ui (4.9.14-1+comsta) unstable; urgency=low
 
