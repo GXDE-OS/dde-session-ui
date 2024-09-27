@@ -20,6 +20,7 @@
  */
 
 #include "fullfilesystemframe.h"
+#include "qtranslator.h"
 #include <QApplication>
 
 #include <DLog>

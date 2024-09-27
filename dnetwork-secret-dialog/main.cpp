@@ -20,6 +20,7 @@
  */
 
 #include "networksecretdialog.h"
+#include "qtranslator.h"
 
 #include <QApplication>
 
