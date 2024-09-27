@@ -80,7 +80,8 @@ void Container::moveToCenter()
     const int primary = desktop->primaryScreen();
     const QRect primaryRect = desktop->screenGeometry(primary);
 
-    move(primaryRect.center() - rect().center());
+    // move(primaryRect.center() - rect().center());
+    move(QPoint(primaryRect.center().x(), primaryRect.bottom() - 180) - QPoint(rect().center().x(), rect().bottom()));
 }
 
 void Container::showEvent(QShowEvent *event)
