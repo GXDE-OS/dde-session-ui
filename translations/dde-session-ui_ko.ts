@@ -445,7 +445,7 @@
     </message>
     <message>
         <location filename="../dde-wm-chooser/wmchooser.cpp" line="68"/>
-        <source>It has detected that you are using a virtual machine, which will affect the system performance and operation experience, for a smooth experience, Normal Mode is recommended</source>
+        <source>It has detected that you are using a virtual machine or termux, which will affect the system performance and operation experience, for a smooth experience, Normal Mode is recommended</source>
         <translation>시스템 성능 및 작업 환경에 영향을 미치는 가상 시스템을 사용하고 있음을 감지했습니다. 원활한 환경을 위해 일반 모드를 사용하는 것이 좋습니다.</translation>
     </message>
     <message>

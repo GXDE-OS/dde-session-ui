@@ -65,7 +65,7 @@ WMChooser::WMChooser(QWidget *parent)
     titleTip->setStyleSheet("font-size: 40px;"
                             "color: #ffffff;");
 
-    QLabel*tip = new QLabel(tr("It has detected that you are using a virtual machine, which will affect the system performance and operation experience, for a smooth experience, Normal Mode is recommended"));
+    QLabel*tip = new QLabel(tr("It has detected that you are using a virtual machine or termux, which will affect the system performance and operation experience, for a smooth experience, Normal Mode is recommended"));
     tip->setWordWrap(true);
 
     QLabel *bottomTip = new QLabel(tr("Effect Mode: Have a delicate experience. Normal Mode: Enjoy the fast performance"));

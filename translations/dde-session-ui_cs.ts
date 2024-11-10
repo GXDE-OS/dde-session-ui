@@ -445,7 +445,7 @@
     </message>
     <message>
         <location filename="../dde-wm-chooser/wmchooser.cpp" line="68"/>
-        <source>It has detected that you are using a virtual machine, which will affect the system performance and operation experience, for a smooth experience, Normal Mode is recommended</source>
+        <source>It has detected that you are using a virtual machine or termux, which will affect the system performance and operation experience, for a smooth experience, Normal Mode is recommended</source>
         <translation>Bylo zjištěno, že používáte virtuální stroj, což má vliv na výkon systému a pocit z jeho rychlosti. Pro plynulost prožitku se doporučuje zvolit Normální režim</translation>
     </message>
     <message>
