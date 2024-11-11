@@ -445,7 +445,7 @@
     </message>
     <message>
         <location filename="../dde-wm-chooser/wmchooser.cpp" line="68"/>
-        <source>It has detected that you are using a virtual machine or termux, which will affect the system performance and operation experience, for a smooth experience, Normal Mode is recommended</source>
+        <source>It has detected that you are using a virtual machine, termux or tiny computer, which will affect the system performance and operation experience, for a smooth experience, Normal Mode is recommended</source>
         <translation>Sistem telah mengesan bahawa anda menggunakan mesin maya. yang akan mempengaruhi prestasi sistem dan pengendalian operasi. Untuk pengendalian yang lancar, Mod Biasa disarankan</translation>
     </message>
     <message>
