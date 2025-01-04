@@ -124,6 +124,7 @@ private:
 
     int getX();
     int getY();
+    int getBottom();
 
     // return geometry of the containing specified point screen,
     // and return true if primary-screen and specified-point-screen are the same screen,

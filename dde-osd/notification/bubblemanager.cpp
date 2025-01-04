@@ -228,7 +228,7 @@ void BubbleManager::onCCDestRectChanged(const QRect &destRect)
     m_ccGeometry = m_dbusControlCenter->rect();
     // use the current rect of control-center to setup position of bubble
     // to avoid a move-anim bug
-    m_bubble->setBasePosition(getX(), getY());
+    m_bubble->setBasePosition(getX(), getBottom());
 
     // use destination rect of control-center to setup move-anim
     if (destRect.width() == 0) { // closing the control-center
@@ -360,6 +360,30 @@ int BubbleManager::getY()
     return rect.y();
 }
 
+int BubbleManager::getBottom()
+{
+    // [1] 原始位置 getY()
+    // [2] 新位置：右下角(如果 dde-dock 不存在的话强制计算)
+    QPair<QRect, bool> pair = screensInfo(QCursor::pos());
+    const QRect &rect = pair.first;
+
+    const int bottom_default_padding = BubbleHeight + Padding + Padding;
+
+    if (!pair.second)
+        goto rect_bottom_of_bubble_top;
+
+    if (!m_dbusdockinterface->isValid())
+        goto rect_bottom_of_bubble_top;
+
+    if (m_dockPosition == DockPosition::Top)
+        return m_dockGeometry.bottom();
+
+    return m_dockGeometry.top() - bottom_default_padding;
+
+rect_bottom_of_bubble_top:
+    return rect.y() + rect.height() - bottom_default_padding;
+}
+
 QPair<QRect, bool> BubbleManager::screensInfo(const QPoint &point) const
 {
     QDesktopWidget *desktop = QApplication::desktop();
@@ -375,7 +399,7 @@ void BubbleManager::onDockRectChanged(const QRect &geometry)
 {
     m_dockGeometry = geometry;
 
-    m_bubble->setBasePosition(getX(), getY());
+    m_bubble->setBasePosition(getX(), getBottom());
 }
 
 void BubbleManager::onDockPositionChanged(int position)
@@ -416,6 +440,6 @@ void BubbleManager::consumeEntities()
     if (pointerScreen != primaryScreen)
         pScreenWidget = desktop->screen(pointerScreen);
 
-    m_bubble->setBasePosition(getX(), getY(), pScreenWidget->geometry());
+    m_bubble->setBasePosition(getX(), getBottom(), pScreenWidget->geometry());
     m_bubble->setEntity(m_currentNotify);
 }
