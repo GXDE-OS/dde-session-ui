@@ -80,7 +80,9 @@ void Container::moveToCenter()
     const int primary = desktop->primaryScreen();
     const QRect primaryRect = desktop->screenGeometry(primary);
 
+    // [1] 原本显示在中心下边
     // move(primaryRect.center() - rect().center());
+    // [2] 修改后显示在中心靠下
     move(QPoint(primaryRect.center().x(), primaryRect.bottom() - 180) - QPoint(rect().center().x(), rect().bottom()));
 }
 
