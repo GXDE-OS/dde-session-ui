@@ -130,4 +130,7 @@ Button::Button(const QString &text, QWidget *parent)
     : QPushButton(text, parent)
 {
     setIsHead(false);
+    if (text == "不再显示此信息") {
+        setText("不再显示");
+    }
 }
