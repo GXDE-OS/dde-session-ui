@@ -1,4 +1,4 @@
-## dde-session-ui
+## gxde-session-ui
 **Description**:This project include those sub-project:
 
 - dde-shutdown
@@ -60,7 +60,7 @@ Those tools you get by the sub-project are system tools, you may use lightdm-dee
 when you choose to shutdown you pc, and so on.
 
 ## Getting help
-* [github](https://github.com/linuxdeepin/dde-session-ui)
+* [github](https://github.com/linuxdeepin/gxde-session-ui)
 * [Gitter](https://gitter.im/orgs/linuxdeepin/rooms)
 * [IRC channel](https://webchat.freenode.net/?channels=deepin)
 * [Forum](https://bbs.deepin.org)

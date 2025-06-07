@@ -52,7 +52,7 @@ config_file_tmp.output = $$OUT_PWD/../files/dde-shutdown.conf
 QMAKE_SUBSTITUTES += config_file_tmp
 QMAKE_CLEAN       += $${config_file_tmp.output}
 
-config_file.path = $$PREFIX/share/dde-session-ui/
+config_file.path = $$PREFIX/share/gxde-session-ui/
 config_file.files += $$OUT_PWD/../files/dde-shutdown.conf
 
 target.path = $${PREFIX}/bin/

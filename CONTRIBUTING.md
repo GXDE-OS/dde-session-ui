@@ -1,6 +1,6 @@
-#Contributing for dde-session-ui
+#Contributing for gxde-session-ui
 
-#dde-session-ui layout
+#gxde-session-ui layout
 
 ##Coding layout
 Dde-session-ui　is developed by Qt, and use dbus interface to communication.

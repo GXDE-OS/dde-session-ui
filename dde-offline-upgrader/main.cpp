@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
     a.setApplicationVersion("0.9");
 
     QTranslator translator;
-    translator.load("/usr/share/dde-session-ui/translations/dde-session-ui_" + QLocale::system().name());
+    translator.load("/usr/share/gxde-session-ui/translations/gxde-session-ui_" + QLocale::system().name());
     a.installTranslator(&translator);
 
     QCommandLineParser parser;

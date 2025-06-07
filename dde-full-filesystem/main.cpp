@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
     DLogManager::registerFileAppender();
 
     QTranslator translator;
-    translator.load("/usr/share/dde-session-ui/translations/dde-session-ui_" + QLocale::system().name());
+    translator.load("/usr/share/gxde-session-ui/translations/gxde-session-ui_" + QLocale::system().name());
     app.installTranslator(&translator);
 
     FullFilesystemFrame frame;

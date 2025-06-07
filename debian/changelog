@@ -1,11 +1,12 @@
-dde-session-ui (4.9.23) UNRELEASED; urgency=medium
+gxde-session-ui (5.0.0) UNRELEASED; urgency=medium
 
   * Change text
   * 消息提示显示至右下角
+  * dde-session-ui 改名为 gxde-session-ui
 
- -- gfdgd_xi <3025613752@qq.com>  Sat, 04 Jan 2025 20:28:35 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Sat, 07 Jun 2025 21:08:48 +0800
 
-dde-session-ui (4.9.14-1+comsta) unstable; urgency=low
+gxde-session-ui (4.9.14-1+comsta) unstable; urgency=low
 
   * ['Autobuild release-candidate: 1ad95b3cfb111d721a3bcba069c91982c90c2955']
 

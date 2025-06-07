@@ -1,4 +1,4 @@
-Source: dde-session-ui
+Source: gxde-session-ui
 Section: devel
 Priority: optional
 Maintainer: gfdgd xi <3025613752@qq.com>
@@ -26,15 +26,16 @@ Build-Depends: debhelper (>= 8.0.0), pkg-config,
 Standards-Version: 3.9.4
 Homepage: http://www.deepin.org/
 
-Package: dde-session-ui
+Package: gxde-session-ui
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${dist:Depends}, deepin-desktop-schemas (>= 2.91.2), dde-daemon, x11-xserver-utils, dbus-x11
-Provides: lightdm-greeter
+Provides: lightdm-greeter, dde-session-ui
 Recommends: onboard
 Conflicts: dde-workspace,
  startdde (<< 2.91.1),
- deepin-notifications
-Replaces: deepin-notifications
+ deepin-notifications,
+ dde-session-ui,
+Replaces: deepin-notifications, dde-session-ui,
 Breaks: dde-workspace, startdde(<< 2.91.1)
-Description: deepin desktop-environment - dde-session-ui module
- Deepin desktop environment 2015 - dde-session-ui module.
+Description: deepin desktop-environment - gxde-session-ui module
+ Deepin desktop environment 2015 - gxde-session-ui module.

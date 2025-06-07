@@ -31,7 +31,7 @@ isEmpty(PREFIX){
 # Automating generation .qm files from .ts files
 !system($$PWD/translate_generation.sh): error("Failed to generate translation")
 
-qm_files.path = /usr/share/dde-session-ui/translations/
+qm_files.path = /usr/share/gxde-session-ui/translations/
 qm_files.files = translations/*.qm
 
 toggle_desktop.path = /usr/share/applications/
@@ -65,14 +65,14 @@ deepin {
     IS_DEEPIN=true
 }
 
-config_file_tmp.input = $$PWD/files/dde-session-ui.conf.in
-config_file_tmp.output = $$OUT_PWD/files/dde-session-ui.conf
+config_file_tmp.input = $$PWD/files/gxde-session-ui.conf.in
+config_file_tmp.output = $$OUT_PWD/files/gxde-session-ui.conf
 
 QMAKE_SUBSTITUTES += config_file_tmp
 QMAKE_CLEAN       += $${config_file_tmp.output}
 
-config_file.path = $$PREFIX/share/dde-session-ui/
-config_file.files += $$OUT_PWD/files/dde-session-ui.conf
+config_file.path = $$PREFIX/share/gxde-session-ui/
+config_file.files += $$OUT_PWD/files/gxde-session-ui.conf
 
 INSTALLS += qm_files \
             toggle_desktop \
